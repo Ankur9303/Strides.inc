@@ -1,1 +1,1 @@
-# Strides.inc
+# strides

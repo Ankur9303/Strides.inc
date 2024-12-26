@@ -1,0 +1,1399 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"  crossorigin="anonymous">
+
+    <style>
+
+
+/*The Misson Vision Core Values Starts Here */
+
+.mvv-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            
+        }
+
+        .mvv-card {
+            background: #f8f9fa;           
+            padding: 20px;
+            margin-bottom: 1.5rem;
+            background-color: #f0f4f8;
+            border-left: 5px solid #2c3e50;
+            transition: transform 0.3s ease;
+        }
+
+        .mvv-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mvv-label {
+            display: inline-block;
+            background: #00a8e8;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 1px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .mvv-content {
+            color: #444;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .core-values-list {
+            color: #444;
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .core-values-list span {
+            color: #00a8e8;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .mvv-container {
+                padding: 0 0.5rem;
+            }
+
+            .mvv-card {
+                padding: 1.5rem;
+            }
+
+            .mvv-content {
+                font-size: 1rem;
+            }
+        }
+
+/*The Misson Vision Core Values Ends Here */
+
+
+/*Read More Button CSS Starts Here*/
+.read-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  background: #03a9f4;
+  color: #fff;
+}
+
+.read-button-text {
+  transform: translateX(15px);
+  font-size: 1.2em;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.read-button:hover .read-button-text {
+  transform: translateX(0px);
+}
+
+.read-button:hover .iconer {
+  transform: translateY(0px);
+}
+/*Read More Button CSS Ends Here*/
+
+
+/*Partner With Us CSS Starts Here*/
+.partner-section {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; /* Updated to take the full width */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.partner-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.partner-content h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.partner-content p {
+    margin: 20px 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.partner-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.partner-content .btn:hover {
+    background-color: #5848d6;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partner-section {
+        flex-direction: column; 
+    }
+
+    .image-container img {
+        max-width: 80%; 
+        margin-top: 10px;
+    }
+}
+/*Partner With Us CSS Ends Here*/
+
+
+/*Contact US Starts Here*/
+.contact_us_6 * {
+  font-family: Nunito, sans-serif;
+}
+
+.contact_us_6 .text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.contact_us_6 .responsive-cell-block {
+  min-height: 75px;
+}
+
+.contact_us_6 input:focus,
+.contact_us_6 textarea:focus {
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+
+.contact_us_6 .container-block {
+  min-height: 75px;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+}
+
+.contact_us_6 .responsive-container-block {
+  min-height: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.contact_us_6 .responsive-container-block.big-container {
+  padding-top: 10px;
+  padding-right: 30px;
+  width: 35%;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  background-color: #03a9f4;
+  position: absolute;
+  height: 950px;
+  right: 0px;
+}
+
+.contact_us_6 .responsive-container-block.container {
+  position: relative;
+  min-height: 75px;
+  flex-direction: row;
+  z-index: 2;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  max-width: 1320px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+.contact_us_6 .container-block.form-wrapper {
+  background-color: white;
+  max-width: 450px;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-top: 90px;
+  margin-right: 0px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .text-blk.contactus-head {
+  font-size: 36px;
+  line-height: 52px;
+  font-weight: 900;
+}
+
+.contact_us_6 .text-blk.contactus-subhead {
+  color: #9c9c9c;
+  width: 300px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  display: none;
+}
+
+.contact_us_6 .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 26px;
+  margin-left: 0px;
+  min-height: 50px;
+}
+
+.contact_us_6 .input {
+  width: 100%;
+  height: 50px;
+  padding-top: 1px;
+  padding-right: 15px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-left-color: #eeeeee;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-size: 16px;
+  color: black;
+}
+
+.contact_us_6 .textinput {
+  width: 98%;
+  min-height: 150px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-left-color: #eeeeee;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  font-size: 16px;
+}
+
+.contact_us_6 .submit-btn {
+  width: 98%;
+  background-color: #03a9f4;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: outset;
+  border-right-style: outset;
+  border-bottom-style: outset;
+  border-left-style: outset;
+  border-top-color: #767676;
+  border-right-color: #767676;
+  border-bottom-color: #767676;
+  border-left-color: #767676;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.contact_us_6 .form-box {
+  z-index: 2;
+  margin-top: 0px;
+  margin-right: 48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .text-blk.input-title {
+  text-align: left;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  color: #9c9c9c;
+}
+
+.contact_us_6 ::placeholder {
+  color: #dadada;
+}
+
+.contact_us_6 .mob-text {
+  display: block;
+  text-align: left;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-12.wk-ipadp-12 {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .text-blk.contactus-subhead.color {
+  color: white;
+}
+
+
+.contact_us_6 .text-blk.map-contactus-head {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  color: #03a9f4;
+}
+
+.contact_us_6 .text-blk.map-contactus-subhead {
+  max-width: 300px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .social-media-links.mob {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  width: 230px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact_us_6 .link-img {
+  width: 30px;
+  height: 30px;
+  margin-top: 0px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .link-img.image-block {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.contact_us_6 .social-icon-link {
+  margin: 0 25px 0 0;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  .contact_us_6 .responsive-container-block.container {
+    justify-content: center;
+  }
+
+  
+
+  .contact_us_6 .responsive-container-block.container {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us_6 .map-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .mob-text {
+    display: block;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 200px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .link-img {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact_us_6 .social-media-links.mob {
+    justify-content: space-evenly;
+  }
+
+  .contact_us_6 .responsive-cell-block.wk-desk-7.wk-ipadp-12.wk-tab-12.wk-mobile-12 {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contact_us_6 .text-blk.contactus-subhead {
+    display: block;
+  }
+
+  .contact_us_6 .mob-text {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .responsive-container-block.container {
+    flex-wrap: wrap;
+  }
+
+  .contact_us_6 .form-box {
+    
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_us_6 .submit-btn {
+    width: 100%;
+  }
+
+  .contact_us_6 .input {
+    width: 100%;
+  }
+
+  .contact_us_6 .textinput {
+    width: 100%;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 80px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .text-blk.input-title {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .contact_us_6 .mob-text {
+    display: block;
+  }
+
+  .contact_us_6 .responsive-container-block.container {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 200px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 220px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .form-box {
+    margin-top: 220px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .text-blk.contactus-head {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact_us_6 .container-block.form-wrapper {
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .contact_us_6 .container-block.form-wrapper {
+    margin-top: 60px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .responsive-cell-block.wk-ipadp-6.wk-tab-12.wk-mobile-12.wk-desk-6 {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .responsive-container-block {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 35px;
+    margin-left: 0px;
+  }
+
+  .contact_us_6 .text-blk.input-title {
+    font-size: 12px;
+  }
+
+  .contact_us_6 .text-blk.contactus-head {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .contact_us_6 .input {
+    height: 45px;
+  }
+}
+/*Contact US Ends Here*/
+
+
+        .video-docker video {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .video-docker::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .video-content {
+            z-index: 2;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+
+/*Why Choose Us CSS Starts Here*/
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  display: block;
+  background: #fff;
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5372F0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-list .card-link .badge {
+  color: #5372F0;
+  width: fit-content;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  font-weight: 500;
+  background: #DDE4FF;
+  margin: 16px 0 18px;
+}
+
+.card-list .card-link .badge-pink {
+  color: #B22485;
+  background: #F7DFF5;
+}
+
+.card-list .card-link .badge-orange {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+
+.card-list .card-link .badge-green {
+  color: #205C20;
+  background: #D6F8D6;
+}
+
+.card-list .card-link .badge-brown {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.card-list .card-link .card-title {
+  color: #000;
+  font-size: 1.19rem;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372F0;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #5372F0;
+  margin-top: -35px;
+}
+
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+/*Why Choose Us CSS Ends Here*/
+
+/*Footer CSS Starts Here*/
+.footer {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    text-align: center;
+    padding: 10px 0;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 14px;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.footer .designer {
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+}
+/*Footer CSS Ends Here*/
+    </style>
+
+    <title>Strides.inc</title>
+</head>
+
+
+<body id="home">
+
+<!--Header Starts Here-->
+    <nav
+        class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200  shadow-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#home" class="flex items-center">
+                <img src="strides_logo.png" class="w-26 h-10" alt="Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
+            </a>
+            <div class="flex md:order-2">
+                <button id="navbar-toggle" data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+                    <li>
+                        <a href="#home"
+                            class="scroll-to-section block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="scroll-to-section block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">About</a>
+                    </li>
+                    <li>
+                        <a href="#products"
+                            class="scroll-to-section block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Products</a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="scroll-to-section block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Header Ends Here-->
+
+
+
+    <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
+        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video class="min-w-full min-h-full absolute object-cover" src="strides_video.mp4"
+                type="video/mp4" autoplay muted loop></video>
+        </div>
+        <div class="video-content space-y-2">
+            <h1 class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-white-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">Strides.inc
+            </h1>
+            <h3 class="font-light text-3xl">Transforming Industries, Enriching Lives</h3>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="text-gray-600 body-font bg-white ">
+        <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1
+                    class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                    About Us
+                </h1>
+                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed ">
+                    Strides.inc, based in India, operates across four critical sectors: Pharmaceuticals, Chemicals,
+                    Energy, and Food. With a commitment to innovation and sustainability, we strive to enhance the
+                    quality of life worldwide. <br> <br>
+
+                    We deliver exceptional solutions across key industries to 
+                drive progress and improve lives globally. Explore our impact in pharmaceuticals, chemicals, energy, and
+                the food sector.
+                </p>
+
+              
+
+            <!--The Misson, Vision, Core Values HTML Code Starts Here-->
+
+    <div class="mvv-container">
+      <div class="mvv-card">
+          <div class="mvv-label">Mission</div>
+          <div class="mvv-content">
+              To provide quality-driven solutions that enrich lives and create a sustainable future.
+          </div>
+      </div>
+
+      <div class="mvv-card">
+          <div class="mvv-label">Vision</div>
+          <div class="mvv-content">
+              To lead with integrity and innovation, adding value across industries for global betterment.
+          </div>
+      </div>
+
+      <div class="mvv-card">
+          <div class="mvv-label">Core Values</div>
+          <div class="mvv-content core-values-list">
+              Quality, Innovation, Integrity, and Sustainability.
+          </div>
+      </div>
+  </div>
+
+<!--The Misson, Vision, Core Values HTML Code Ends Here-->
+
+</div>
+<div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+    <img class="object-cover object-center rounded" alt="hero"
+        src="images/3443535.png">
+</div>
+
+        </div>
+    </section>
+
+
+
+<section id="products">
+    <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+        <h1
+            class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+            Industries We Serve
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-5">
+
+            <div class="hover:opacity-75 transition-opacity duration-300     relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url('Pharmaceuticals-1.jpg');">     
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Pharmaceuticals</span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <!--Read More Button-->
+
+<a class="read-button" href="Pharmaceutical-1.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
+                </main>
+            </div>
+            <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url('Chemicals.jpg');">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Chemicals </span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <!--Read More Button-->
+
+<a class="read-button" href="Chemicals-1.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
+                </main>
+            </div>
+            <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url('Energy.jpg');">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Energy Sector</span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <!--Read More Button-->
+
+<a class="read-button" href="Energy-1.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
+                </main>
+            </div>
+            <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url('Food_Sector.jpg');">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Food Sector</span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <!--Read More Button-->
+
+<a class="read-button" href="Food-1.html">
+  <p class="read-button-text"> More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
+                </main>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Why Choose Us Starts Here-->
+<section >
+<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+    <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Why Choose Us</h2>
+                </div>
+
+<div class="container swiper">
+    <div class="card-wrapper">
+      <!-- Card slides container -->
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Industry_Expertise.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-pink">Industry Expertise</p>
+            <h2 class="card-title">Knowledge in pharma raw materials and chemicals.</h2>
+            
+          </div>
+        </li>
+        <li class="card-item swiper-slide" >
+          <div class="card-link">
+            <img src="images/Quality.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-green">Uncompromising Quality Standards</p>
+            <h2 class="card-title">Products meet ISO, GMP, and international standards.</h2>
+            
+          </div>
+        </li>
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Comprehensive_Product_Range.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-orange">Comprehensive Product Range</p>
+            <h2 class="card-title">Wide variety of products available to satisfy your requirements.</h2>
+            
+          </div>
+        </li>
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Customized_Solutions.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-green">Customized Solutions</p>
+            <h2 class="card-title">Tailored offerings to meet your specific needs.
+            </h2>
+            
+          </div>
+        </li>
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Global Network.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-brown">Global Network</p>
+            <h2 class="card-title">Reliable, on-time delivery worldwide.
+            </h2>
+            
+          </div>
+        </li>
+
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Competitive_Pricing.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-pink">Competitive Pricing</p>
+            <h2 class="card-title">Quality products at cost-effective prices.
+
+            </h2>
+            
+          </div>
+        </li>
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Sustainability.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-orange">Commitment to Sustainability</p>
+            <h2 class="card-title">Environmentally friendly sourcing and practices.
+
+            </h2>
+            
+          </div>
+        </li>
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/Trust.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-green">Trusted by Clients Worldwide</p>
+            <h2 class="card-title">Proven track record with global industry leaders.</h2>         
+          </div>
+        </li>
+        <li class="card-item swiper-slide">
+          <div class="card-link">
+            <img src="images/client_support.jpg" alt="Card Image" class="card-image">
+            <p class="badge badge-brown">Exceptional Customer Support</p>
+            <h2 class="card-title">Dedicated team ready to assist anytime.
+            </h2>            
+          </div>
+        </li>
+      </ul>
+
+       <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking custom script -->
+  <script>
+    new Swiper('.card-wrapper', {
+    loop: true,
+    spaceBetween: 30,
+
+    // Pagination bullets
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        }
+    }
+});
+  </script>
+
+</div>
+</section>
+<!--Why Choose Us Ends Here-->
+
+
+<!-- Partner With Us HTML Starts Here -->
+<section>
+  <div class="flex max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+  
+<div class="partner-section ">
+  <div class="partner-content">
+      <h1><b>Partner With Us</b></h1>
+      <p>We believe in the power of collaboration and mutual growth. Let's build a future fueled by innovation, sustainability, and excellence.</p>
+      <a href="#contact" class="btn">Become a Partner</a>
+  </div>
+  <div class="image-container">
+      <img src="images/p2.png" alt="Partner with Us Illustration">
+  </div>
+</div>
+
+</div>
+
+</section>
+<!-- Partner With Us HTML Ends Here-->
+
+
+
+<!--Contact Us Starts Here-->
+<section id="contact" class="bg-gray-100">
+  
+  <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+      <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+          <h2 class=" text-3xl font-extrabold text-gray-900">Contact Us</h2> </div>
+                  
+          <div class="contact_us_6">
+              <div class="responsive-container-block container">
+                <form class="form-box" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                  <div class="container-block form-wrapper">
+                    <div class="mob-text">
+
+                      <p class="text-blk contactus-head">
+                        Get in Touch
+                      </p>
+                      <p class="text-blk contactus-subhead">
+                        Fill the following details to directly mail us what your requirements are:
+                      </p>
+                    </div>
+
+                    <input type="hidden" name="access_key" value="fda4deb8-1b18-4412-ae02-d5bc1e5eaffe">
+
+                    <div class="responsive-container-block" id="i2cbk">
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-3">
+                        <p class="text-blk input-title">
+                         <b> NAME </b>
+                        </p>
+                        <input type="text" name="name" class="input" id="ijowk-3" placeholder="Please enter your name">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ip1yp">
+                        <p class="text-blk input-title">
+                          <b>EMAIL</b>
+                        </p>
+                        <input type="email" name="email" class="input" id="ipmgh-3"  placeholder="Please enter your email">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ih9wi">
+                        <p class="text-blk input-title">
+                      <b> PHONE NUMBER</b>
+                        </p>
+                        <input type="tel" name="phone" class="input" id="imgis-3"  placeholder="Please enter your phone number">
+                      </div>
+                      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3">
+                        <p class="text-blk input-title">
+                      <b>REQUIREMENTS</b>
+                        </p>
+                        <textarea name="message" class="textinput" id="i5vyy-3" placeholder="Please enter your requirements"></textarea>
+                      </div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">
+                      Send Inquiry
+                    </button>
+                  </div>
+                </form>
+
+
+
+                <div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
+                  <div class="map-part">
+                    <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
+                      Reach us at
+                    </p>
+                    <p class="text-blk map-contactus-subhead">
+                      Feel free to connect with us, we are always ready to help you out!
+                    </p>
+                    <div class="social-media-links mob">
+                      <a class="social-icon-link" href="https://www.linkedin.com/company/strides-inc/" id="ix94i-2-2">
+                        <img class="link-img image-block" src="images/linkedin-black.png">
+                      </a>
+                      <a class="social-icon-link" href="https://wa.me/+917990994921" id="itixd">
+                        <img class="link-img image-block" src="images/whatsapp-black.png">
+                      </a>
+                    </div>
+                    <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+                      <div class="px-6 py-4">
+                          <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
+                          <p class="mt-1 text-gray-600">Strides.inc, Ahmedabad-Gujarat, India </p>
+                      </div>
+                      <div class="border-t border-gray-200 px-6 py-4">
+                          <h3 class="text-lg font-medium text-gray-900">Hours</h3>
+                          <p class="mt-1 text-gray-600">Monday to Saturday, 9 AM – 6 PM IST.</p>
+                          <p class="mt-1 text-gray-600"></p>
+                          <p class="mt-1 text-gray-600">Sunday: Closed</p>
+                      </div>
+                      <div class="border-t border-gray-200 px-6 py-4">
+                          <h3 class="text-lg font-medium text-gray-900">Contact</h3>
+                          <p class="mt-1 text-gray-600">Email: contact@strides.inc | ankur.work03@gmail.com</p>
+                          <p class="mt-1 text-gray-600">Phone: +91 7990994921</p>
+                      </div>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+</section>
+<!--Contact Us Ends Here-->
+
+
+
+
+    
+<!--Footer Starts Here-->
+    <footer class="footer">
+      <p>
+          Copyright © 2024 CCI. All Rights Reserved. 
+          <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Developed by: Devanshu Jadav</a></span>
+      </p>
+  </footer>
+<!--Footer Ends Here-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('navbar-toggle');
+            const menu = document.getElementById('navbar-sticky');
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
