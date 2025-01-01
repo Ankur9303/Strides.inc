@@ -884,7 +884,7 @@
 /*Footer CSS Ends Here*/
     </style>
 
-    <title>Strides.inc</title>
+    <title>strides.inc</title>
 </head>
 
 
@@ -1377,7 +1377,7 @@
 <!--Footer Starts Here-->
     <footer class="footer">
       <p>
-          Copyright © 2024 CCI. All Rights Reserved. 
+          Copyright © <span id="currentYear"></span> CCI. All Rights Reserved. 
           <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Developed by: Devanshu Jadav</a></span>
       </p>
   </footer>
@@ -1392,6 +1392,10 @@
                 menu.classList.toggle('hidden');
             });
         });
+    </script>
+
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
 
 

@@ -264,7 +264,7 @@ class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200  shadow-
     <!--Footer Starts Here-->
 <footer class="footer">
     <p>
-        Copyright © 2024 CCI. All Rights Reserved. 
+        Copyright © <span id="currentYear"></span> CCI. All Rights Reserved. 
         <span class="designer"><a href="http://www.linkedin.com/in/devanshu-jadav-900b61238">Developed by: Devanshu Jadav</a></span>
     </p>
 </footer>
@@ -281,5 +281,10 @@ class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200  shadow-
         });
     });
 </script>
+
+<script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
